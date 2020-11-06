@@ -6,10 +6,10 @@ window = tk.Tk()
 window.title("tk")
 window.geometry("600x50")
 
-label1 = tk.Label(window,text="x")
-label2 = tk.Label(window,text="=")
+label1 = tk.Label(window,text="x",width=40)
+label2 = tk.Label(window,text="=",width=40)
 
-label1.place(x=150,y=15)
-label2.place(x=400,y=15)
+label1.grid(row=1,column=1)
+label2.grid(row=1,column=2)
 
 window.mainloop()
